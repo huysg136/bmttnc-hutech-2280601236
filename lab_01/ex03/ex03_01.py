@@ -9,4 +9,4 @@ input_list = input("Nhập danh sách số nguyên, cách nhau bằng dấu ph�
 numbers = list(map(int, input_list.split(',')))
 
 tong_so_chan = tinh_tong_so_chan(numbers)
-print("Tổng các số chẵn trong danh sách là:", tong_so_chan)
+print("Tổng các số chẵn là:", tong_so_chan)
