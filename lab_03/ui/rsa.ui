@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RSAGUI</class>
+ <widget class="QWidget" name="RSAGUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>RSA Encryption Signing</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   
+   <item>
+    <widget class="QGroupBox" name="group_enc_dec">
+     <property name="title">
+      <string>Encryption / Decryption</string>
+     </property>
+     <layout class="QVBoxLayout" name="enc_layout">
+      <item>
+       <widget class="QLabel" name="label_plain">
+        <property name="text">
+         <string>Plain Text</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="txt_plain_text"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_cipher">
+        <property name="text">
+         <string>Cipher Text</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="txt_cipher_text"/>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="btn_layout_enc">
+        <item>
+         <widget class="QPushButton" name="btn_gen_keys">
+          <property name="text">
+           <string>Generate Keys</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_encrypt">
+          <property name="text">
+           <string>Encrypt</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_decrypt">
+          <property name="text">
+           <string>Decrypt</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QGroupBox" name="group_sign_verify">
+     <property name="title">
+      <string>Signing / Verification</string>
+     </property>
+     <layout class="QVBoxLayout" name="sign_layout">
+      <item>
+       <widget class="QLabel" name="label_msg">
+        <property name="text">
+         <string>Message</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="txt_info"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_sign">
+        <property name="text">
+         <string>Signature</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="txt_sign"/>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="btn_layout_sign">
+        <item>
+         <widget class="QPushButton" name="btn_sign">
+          <property name="text">
+           <string>Sign</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_verify">
+          <property name="text">
+           <string>Verify</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
